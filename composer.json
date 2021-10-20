@@ -1,0 +1,37 @@
+{
+  "name": "mvo/contao-content-variants",
+  "type": "contao-bundle",
+  "description": "Use a single integer field to store variant configurations of content elements.",
+  "keywords": ["content", "variant", "dx"],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Moritz Vondano",
+      "homepage": "https://github.com/m-vo/contao-content-variants"
+    }
+  ],
+  "require": {
+    "php": ">=8.0",
+    "contao/core-bundle": "^4.9"
+  },
+  "require-dev": {
+    "contao/manager-plugin": "^2.0",
+    "contao/easy-coding-standard": "^3.0"
+  },
+  "conflict": {
+    "contao/manager-plugin": "<2.0 || >=3.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Mvo\\ContaoContentVariants\\": "src/"
+    }
+  },
+  "extra": {
+    "contao-manager-plugin": "Mvo\\ContaoContentVariants\\ContaoManager\\Plugin"
+  },
+  "scripts": {
+    "cs": [
+      "vendor/bin/ecs check src/ --fix --ansi"
+    ]
+  }
+}

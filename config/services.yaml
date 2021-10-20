@@ -1,0 +1,8 @@
+services:
+  mvo.contao_content_variants.dca_listener:
+    class: Mvo\ContaoContentVariants\EventListener\ContentVariants
+    arguments:
+      - '@contao.fragment.registry'
+      - '@service_container'
+      - '@database_connection'
+    public: true
